@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Goohle Image Search</title>
+        <style>
+            .linkClass {
+                position: absolute;
+                top: 10px;
+                right: 120px;   
+            }
+            div a { /* Style all anchor tags inside div elements */
+                color: rgb(216, 53, 13);
+            }
+
+            @media (min-width: 100px){
+                form {
+                margin: 0;
+                height: 100vh; /* Full viewport height */
+                display: flex;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                flex-direction: column; /* Stacks elements vertically */
+                gap: 20px; /* Adds space between elements */
+                
+            } }
+
+        </style>
+    </head>
+    <body>
+        <div style="position: absolute; top: 10px; right: 10px;">
+            <a href="index.html"> Google Search </a>
+        </div>
+
+        <form action="https://images.google.com/search">
+            <input type="text" name="q" style="flex-basis: 20px; width: 500px; border-radius: 15px;">
+            <input type="hidden" name="tbm" value="isch">
+            <input type="submit" value="Google Image Search">  
+        </form>
+
+    </body>
+</html>
